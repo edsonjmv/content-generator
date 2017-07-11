@@ -1,3 +1,18 @@
-page-suggestions {
+$black: #000;
 
+page-suggestions {
+  .box {
+    border: 1px solid $black;
+    height: 500px;
+    margin: 40px auto 0;
+    padding-top: 60px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
 }

@@ -8,13 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CategoryPage } from '../pages/category/category';
 import { TopicsPage } from '../pages/topics/topics';
+import { RecurrencePage } from '../pages/recurrence/recurrence';
+import { SuggestionsPage } from '../pages/suggestions/suggestions';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CategoryPage,
-    TopicsPage
+    TopicsPage,
+    RecurrencePage,
+    SuggestionsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { TopicsPage } from '../pages/topics/topics';
     MyApp,
     HomePage,
     CategoryPage,
-    TopicsPage
+    TopicsPage,
+    RecurrencePage,
+    SuggestionsPage
   ],
   providers: [
     StatusBar,
