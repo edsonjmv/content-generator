@@ -3,7 +3,22 @@
     <h1>Logo</h1>
   </div>
   <p>Post interesting articles and news to your business Facebook page and improve your reputation early.</p>
+
+  <ion-card *ngIf="userProfile">
+    <img [src]="userProfile.photoURL" />
+    <ion-card-content>
+      <ion-card-title>
+        {{ userProfile.displayName }}
+      </ion-card-title>
+      <p>
+        The UID for this new user is {{userProfile.uid}} and the email is {{userProfile.email}}
+      </p>
+    </ion-card-content>
+  </ion-card>
   <section class='login-btn'>
+    <button ion-button block (click)="facebookLogin()">
+      Log In with Facebook
+    </button>
     <button ion-button block (click)='goToCategory()'>Login</button>
   </section>
 </ion-content>
