@@ -1,0 +1,49 @@
+$black: #000;
+$white: #fff;
+
+page-category {
+  .card-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    ion-col {
+      padding: 0;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .card-title {
+      color: $white;
+      font-size: 2em;
+      font-weight: bold;
+      position: absolute;
+      text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+      top: 36%;
+      width: 100%;
+    }
+
+    .card-subtitle {
+      color: $white;
+      font-size: 1em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .nav-btn {
+    font-size: 16px;
+    text-align: right;
+  }
+}
