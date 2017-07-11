@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TopicsPage } from '../topics/topics';
 
 @IonicPage()
 @Component({
@@ -9,6 +10,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class CategoryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  goToTopics(){
+    this.navCtrl.push(TopicsPage)
   }
 
 }
