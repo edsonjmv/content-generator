@@ -1,1 +1,1 @@
-page-suggestions .box{border:1px solid #000;height:500px;margin:40px auto 0;padding-top:60px;text-align:center;width:90%}page-suggestions .title{font-size:16px;font-weight:bold;text-align:center}
+page-suggestions .title{font-size:16px;font-weight:bold;text-align:center}page-suggestions #card-stack{height:200px;margin:100px auto 0;position:relative;width:90%}page-suggestions #card-stack ion-card{border-radius:5px;height:90%;position:absolute;text-align:center;top:3%}

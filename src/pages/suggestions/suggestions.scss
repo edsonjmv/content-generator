@@ -1,18 +1,24 @@
 $black: #000;
 
 page-suggestions {
-  .box {
-    border: 1px solid $black;
-    height: 500px;
-    margin: 40px auto 0;
-    padding-top: 60px;
-    text-align: center;
-    width: 90%;
-  }
-
   .title {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+  }
+
+  #card-stack {
+    height: 200px;
+    margin: 100px auto 0;
+    position: relative;
+    width: 90%;
+  }
+
+  #card-stack ion-card {
+    border-radius: 5px;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    top: 3%;
   }
 }
