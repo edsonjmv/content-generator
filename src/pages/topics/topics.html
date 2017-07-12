@@ -13,62 +13,10 @@
   <p>Second, select at least one topic that is intereting to your page</p>
   <ion-grid>
     <ion-row>
-      <ion-col col-4>
+      <ion-col col-4 *ngFor='let topic of topics'>
         <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Fun</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Life</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Business</div>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Debate</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Discussion</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Project</div>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Social</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Random</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Controversial</div>
+          <img src="{{topic.imageUrl}}" />
+          <div class="card-title">{{topic.title}}</div>
         </ion-card>
       </ion-col>
     </ion-row>

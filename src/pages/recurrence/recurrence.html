@@ -13,42 +13,10 @@
   <p>Last, select how often you want to get suggested content.</p>
   <ion-grid>
     <ion-row>
-      <ion-col col-4>
+      <ion-col col-4 *ngFor='let recurrence of recurrences'>
         <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Every day</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Every two days</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Twice a week</div>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Once a week</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Twice a month</div>
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
-        <ion-card>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/24/c3/f9/24c3f9bbcb3d2ce385521414900b5757.png" />
-          <div class="card-title">Once a month</div>
+          <img src="{{recurrence.imageUrl}}" />
+          <div class="card-title">{{recurrence.title}}</div>
         </ion-card>
       </ion-col>
     </ion-row>
